@@ -50,6 +50,9 @@ def covid_data_recovered():
     return recoveries
 
 def plot_covid_data(dates, infected_cases, death_count, recoveries):
+    plt.title("COVID-19: Infected Cases, Death Count, and Recoveries Over Time")
+    plt.xlabel("Time (Y-M)")
+    plt.ylabel("COVID-19 Data")
     plt.plot(dates, infected_cases)
     plt.plot(dates, death_count)
     plt.plot(dates, recoveries)
