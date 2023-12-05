@@ -49,9 +49,12 @@ def covid_data_recovered():
     #print(recoveries)
     return recoveries
 
-def plot_covid_data(infected_cases, death_count, recoveries):
-    plt.plot(infected_cases, death_count, recoveries)
-    #print(infected_cases, death_count, recoveries)
+def plot_covid_data(dates, infected_cases, death_count, recoveries):
+    plt.plot(dates, infected_cases)
+    plt.plot(dates, death_count)
+    plt.plot(dates, recoveries)
+    plt.show()
+    #print(dates, infected_cases, death_count, recoveries)
     return
 
-plot_covid_data(covid_data_infected(), covid_data_deaths(), covid_data_recovered())
+plot_covid_data(covid_data_dates(), covid_data_infected(), covid_data_deaths(), covid_data_recovered())
