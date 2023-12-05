@@ -9,13 +9,14 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-#covid_data_file = pd.read_csv("usa_county_wise.csv")
-#print(covid_data_file.head(2500))
-#print(covid_data_file)
-#print(covid_data_file.to_string()) # IO takes about 5-10 minutes. Don't print this unless you absolutely needed.
-#print(covid_data_file.columns)
-#columns_needed = ["Province_State", "Country_Region", "Date", "Confirmed", "Deaths"]
-
+def testing():
+    #covid_data_file = pd.read_csv("usa_county_wise.csv")
+    #print(covid_data_file.head(2500))
+    #print(covid_data_file)
+    #print(covid_data_file.to_string()) # IO takes about 5-10 minutes. Don't print this unless you absolutely needed.
+    #print(covid_data_file.columns)
+    #columns_needed = ["Province_State", "Country_Region", "Date", "Confirmed", "Deaths"]
+    return
 
 def covid_data_dates():
     columns_needed = ["Date"]
@@ -50,12 +51,15 @@ def covid_data_recovered():
     return recoveries
 
 def plot_covid_data(dates, infected_cases, death_count, recoveries):
-    plt.title("COVID-19: Infected Cases, Death Count, and Recoveries Over Time")
+    plt.title("COVID-19: Infected Cases, Death Counts, and Recoveries Over Time")
     plt.xlabel("Time (Y-M)")
-    plt.ylabel("COVID-19 Data")
-    plt.plot(dates, infected_cases)
-    plt.plot(dates, death_count)
-    plt.plot(dates, recoveries)
+    plt.ylabel("Number of Cases")
+    plt.grid()
+    plt.plot(dates, infected_cases, color = "orange", label = "Infected Cases")
+    plt.plot(dates, death_count, color = "red", label = "Deaths")
+    plt.plot(dates, recoveries, color = "green", label = "Recoveries")
+    #plt.autofmt_xdate()
+    plt.legend()
     plt.show()
     #print(dates, infected_cases, death_count, recoveries)
     return
