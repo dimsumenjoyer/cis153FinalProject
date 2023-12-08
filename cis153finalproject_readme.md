@@ -3,6 +3,15 @@ Victor Van
 CIS153: Final Project
 11/28/2023, Due: 12/17/2023
 
+Instructions to use project:
+Download the relevant dataset, which is listed below.
+Also download matplotlib.pyplot and pandas. These libraries don't come with python by default.
+https://pandas.pydata.org/
+https://matplotlib.org/stable/users/installing/index.html
+
+Future Work:
+I'd like to use live COVID-19 data, my data is outdated and cannot be regularly updated. I'd have to use an API.
+
 This is where I got my datasets:
 https://www.kaggle.com/datasets/imdevskp/corona-virus-report
 
@@ -14,8 +23,10 @@ Libraries used:
 -pandas
 
 External Resources:
-https://matplotlib.org/stable/index.html
+https://matplotlib.org/stable/users/index.html
 https://pandas.pydata.org/docs/user_guide/index.html#user-guide
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sum.html
 
 I used usa_county_wise.csv as my dataset, which has 15 columns and 627,921 rows.
 I also defined a new column of data called "recoveries", so I was working with 16 columns.
