@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 def covid_dataframe():
     columns_needed = ["Province_State", "Country_Region", "Date", "Confirmed", "Deaths"]
-    covid_data_file = pd.read_csv("usa_county_wise.csv", usecols=columns_needed)
+    covid_data_file = pd.read_csv("usa_county_wise.csv", usecols = columns_needed)
     return covid_data_file
 
 def covid_data_dates(covid_data_file):
