@@ -49,7 +49,6 @@ def main():
             plt.plot(dates, cases / 1000, color = "orange", label = "Infected Cases")
             plt.plot(dates, deaths / 1000, color = "red", label = "Deaths")
             plt.plot(dates, recovered / 1000, color = "green", label = "Recoveries")
-            done = True
         elif user_input == 2:
             plt.plot(dates, cases / 1000, color = "orange", label = "Infected Cases")
         elif user_input == 3:
