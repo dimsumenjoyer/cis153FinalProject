@@ -169,7 +169,7 @@ int isMascotSpecial(int* burgerOrder, int cardinalityOfArray)
     int i9 = burgerOrder[9]; int i10 = burgerOrder[10];
     for (int i = 0; i < cardinalityOfArray; i++)
     { // if burger doesn't have all of ingredients return 0, otherwise return 1.
-        if (!((i0 == 0) && (i1 == 1) && (i2 == 2) && (i3 == 3) && (i4 == 4) && (i5 == 5) && (i6 == 6) && (i7 == 7) && (i8 == 8) && (i9 == 9 ) && (i10 == 10)))
+        if (!((i0 == 0) && (i1 == 1) && (i2 == 2) && (i3 == 3) && (i4 == 4) && (i5 == 5) && (i6 == 6) && (i7 == 7) && (i8 == 8) && (i9 == 9) && (i10 == 10)))
         {
             return 0;
         }
